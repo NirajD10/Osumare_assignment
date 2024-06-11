@@ -1,0 +1,44 @@
+.services-card{
+    width: 18.5625rem;
+    background-color: white;
+    border-radius: 0.5rem;
+    padding: 2rem 1rem 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+    box-shadow: -3px 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.services-card__headingsection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.services-card__vector{
+    width: 3.25rem;
+    height: 3.25rem;
+    background-color: var(--circularBackground);
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.services-card__headingsection > h4 {
+    font-size: 1.125rem;
+    line-height: 1.40625rem;
+    margin: 0;
+    color: var(--primaryDark);
+}
+
+.services-card__info{
+    font-size: 0.875rem;
+    margin: 0;
+    color: var(--secondaryDark);
+}

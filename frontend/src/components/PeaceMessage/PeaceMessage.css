@@ -1,0 +1,57 @@
+.message-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.message-bluecircle {
+  position: absolute;
+  top: -15rem;
+  left: -5rem;
+  z-index: -1;
+}
+
+.message-redcircle {
+  position: absolute;
+  top: -15rem;
+  right: 0;
+  z-index: -1;
+}
+
+.meassge-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-height: 36.875em;
+  gap: 2rem;
+  padding: 9.84375rem 0;
+}
+
+.message-content {
+  max-width: 48.6875rem;
+}
+
+/* mobile screen */
+/* Responsive */
+@media (width < 580px) {
+    .message-content {
+        width: 100%;
+        padding: 0em 1rem 0 1rem;
+    }
+}
+
+@media (581px < width < 766px) {
+    .message-content {
+        width: 100%;
+        padding: 0em 1.5em 0 1.5em;
+    }
+}
+
+/* Tabs and small laptop Screen */
+@media (767px < width < 1199px) {
+    .message-content {
+        width: 100%;
+        padding: 0 3.5em;
+    }
+}

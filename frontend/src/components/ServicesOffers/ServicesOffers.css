@@ -1,0 +1,44 @@
+.services-container {
+  width: 100%;
+  height: inherit;
+  background-color: var(--secondaryBackground);
+  padding-top: 5.6875rem !important;
+  padding-bottom: 5.6875rem !important;
+}
+
+.services-section {
+  display: flex;
+  flex-direction: column;
+  gap: 4.25rem;
+  padding-top: 5.6875rem;
+}
+
+.serivces-section__offerslist {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1.875rem;
+}
+
+.serivces-section__btn {
+  width: 100%;
+  text-align: center;
+}
+
+/* Media Responsive */
+@media (width < 580px) {
+    .serivces-section__offerslist{
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+}
+
+@media (581px < width < 766px) {
+    .serivces-section__offerslist{
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+}

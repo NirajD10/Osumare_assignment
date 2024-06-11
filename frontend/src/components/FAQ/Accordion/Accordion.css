@@ -1,0 +1,45 @@
+.accordion-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    background-color: white;
+    color: var(--primaryDark);
+    box-shadow: 0px 10px 15px rgba(0, 120, 255, 0.35);
+  }
+  
+  .accordion-title:hover {
+    background-color: #0078FF;
+    color: white;
+  }
+  
+  .accordion-title {
+    padding: 1.25rem 2.8125rem;
+  }
+
+  .accordion-title > p{
+    font-size: 18px;
+    line-height: 28px;
+    margin: 0;
+  }
+
+  .active {
+    background-color: var(--primaryColor);
+    color: white;
+  }
+
+  .accordian-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .accordion-content {
+    background-color: white;
+    padding: 1.75rem 2.8125rem;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+    color: #706F7B;
+    margin: 0;
+  }
+  

@@ -1,0 +1,54 @@
+.primary-btn {
+  border-radius: 2em;
+  background-color: var(--primaryColor);
+  color: white;
+  text-align: center;
+  margin-top: 2rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.big-btn {
+  padding: 0.82rem 8.5rem 0.82rem 8.5rem;
+  font-size: 1.5rem;
+  line-height: 1.875em;
+}
+
+.mid-btn {
+  padding: 1.031rem 4rem 1.031rem 4rem;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+/* mobile screen */
+/* Responsive */
+@media (width < 580px) {
+  .primary-btn {
+    margin-top: 1.25em;
+  }
+
+  .big-btn {
+    padding: 0.82rem 4.25rem 0.82rem 4.25rem;
+    font-size: 1.125rem;
+    line-height: 1.5em;
+  }
+
+  .mid-btn {
+    padding: 1.031rem 2rem 1.031rem 2rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
+
+@media (581px < width < 766px) {
+  .primary-btn {
+    margin-top: 1.75em;
+  }
+
+  .big-btn {
+    padding: 0.82rem 4.25rem 0.82rem 4.25rem;
+    font-size: 1.125rem;
+    line-height: 1.5em;
+  }
+}

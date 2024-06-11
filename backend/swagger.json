@@ -1,0 +1,286 @@
+{
+    "openapi": "3.0.3",
+    "info": {
+        "title": "TODO Lists Express API Documentation",
+        "description": "This is a simple TODO-lists API application made with Express and documented with Swagger",
+        "version": "0.0.1"
+    },
+    "servers": [
+        {
+            "url": "http://localhost:3000/"
+        }
+    ],
+    "tags": [
+        {
+            "name": "todo-lists",
+            "description": "CRUD Operations of TODO-lists"
+        }
+    ],
+    "apis": ["./routes/*.js"],
+    "paths": {
+        "/tasks": {
+            "get": {
+                "tags": [
+                    "todo-lists"
+                ],
+                "summary": "Retrieve a list of all tasks.",
+                "description": "Returns an array of all lists",
+                "responses": {
+                    "200": {
+                        "description": "successful",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/TaskList"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "post": {
+                "tags": [
+                    "todo-lists"
+                ],
+                "summary": "Create a new task.",
+                "description": "Provide title and description in order to create new tasks. Ignore title or description will generate API error.",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/CreateTaskBody"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "201": {
+                        "description": "Sucessfully created."
+                    },
+                    "400": {
+                        "description": "Title or Description Required."
+                    },
+                    "500": {
+                        "description": "Other error message"
+                    }
+                }
+            }
+        },
+        "/tasks/{id}": {
+            "get": {
+                "tags": [
+                    "todo-lists"
+                ],
+                "summary": "Find a single tasks by ID",
+                "description": "For valid response try string from stored of generated uuid.",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "ID of tasks that needs to be fetched",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/lists"
+                                }
+                            },
+                            "application/xml": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/lists"
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Not Found on lists"
+                    },
+                    "404": {
+                        "description": "Missing ID"
+                    }
+                }
+            },
+            "delete": {
+                "tags": [
+                    "todo-lists"
+                ],
+                "summary": "Delete a single tasks by ID",
+                "description": "For valid response try string from stored of generated uuid. Anything nonid will generate API errors",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "ID of the tasks that needs to be deleted",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "201": {
+                        "description": "Sucessfully deleted."
+                    },
+                    "400": {
+                        "description": "Task Not found to delete one"
+                    },
+                    "404": {
+                        "description": "Missing ID"
+                    }
+                }
+            },
+            "put": {
+                "tags": [
+                    "todo-lists"
+                ],
+                "summary": "Update all details by providing single tasks by ID",
+                "description": "For valid response try string from stored of generated uuid as well as response body(title, description). Anything nonid, not giving request body(title, description) will generate API errors.",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/CreateTaskBody"
+                            }
+                        }
+                    }
+                },
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "ID of the tasks that needs to be update all details",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "201": {
+                        "description": "Sucessfully updated."
+                    },
+                    "400": {
+                        "description": "Task Not found to update one"
+                    },
+                    "404": {
+                        "description": "Missing ID"
+                    }
+                }
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "lists": {
+                "type": "object",
+                "required": [
+                    "title",
+                    "description"
+                ],
+                "properties": {
+                    "id": {
+                        "type": "string",
+                        "example": "523bcsycxmvdvy2pyht1ymy13",
+                        "description": "The unique identifier auto-generated uuid v4 for the task."
+                    },
+                    "title": {
+                        "type": "string",
+                        "example": "This is title",
+                        "description": "The title of the task."
+                    },
+                    "description": {
+                        "type": "string",
+                        "example": "this is description",
+                        "description": "A detailed description of the task."
+                    }
+                },
+                "xml": {
+                    "name": "todo-lists"
+                }
+            },
+            "CreateTaskBody": {
+                "type": "object",
+                "required": [
+                    "title",
+                    "description"
+                ],
+                "properties": {
+                    "title": {
+                        "type": "string",
+                        "example": "Express Js.",
+                        "description": "The title of the task."
+                    },
+                    "description": {
+                        "type": "string",
+                        "example": "this is description",
+                        "description": "A detailed description of the task."
+                    }
+                },
+                "xml": {
+                    "name": "CreateTaskBody"
+                }
+            },
+            "TaskList": {
+                "type": "object",
+                "properties": {
+                    "lists": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#/components/schemas/lists"
+                        },
+                        "example": [
+                            {
+                                "id": "523bcsycxmvdvy2pyht1ymy13",
+                                "title": "Node.js Project",
+                                "description": "Make several projects for Node.js"
+                            },
+                            {
+                                "id": "8fiwpuv8two0i00fab6w8dmhb",
+                                "title": "Node.js Project as well as Express",
+                                "description": "Make several projects for Node.js and Express.js"
+                            }
+                        ]
+                    }
+                }
+            },
+            "ErrorApiResponse": {
+                "type": "object",
+                "properties": {
+                    "statusCode": {
+                        "type": "integer",
+                        "format": "int32"
+                    },
+                    "data": {
+                        "type": "string"
+                    },
+                    "message": {
+                        "type": "string"
+                    }
+                },
+                "xml": {
+                    "name": "##default"
+                }
+            }
+        },
+        "requestBodies": {
+            "lists": {
+                "description": "TODO lists that needs to be added to store",
+                "content": {
+                    "application/json": {
+                        "schema": {
+                            "$ref": "#/components/schemas/lists"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

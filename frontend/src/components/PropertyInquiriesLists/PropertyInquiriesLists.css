@@ -1,0 +1,25 @@
+.propertylists{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2.1875em;
+    margin-top: 4rem;
+}
+
+/* mobile screen */
+/* Responsive */
+@media (width < 580px) {
+    .propertylists {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        gap: 1.09375em;
+    }
+  }
+  
+  @media (581px < width < 766px) {
+    .propertylists {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        gap: 1.09375em;
+    }
+  }

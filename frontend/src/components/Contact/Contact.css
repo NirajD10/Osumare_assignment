@@ -1,0 +1,46 @@
+.contact-container {
+  padding-top: 10rem;
+  margin-bottom: 8.34375rem;
+}
+
+.contact-section {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.contact-bluecircle {
+  position: absolute;
+  top: -15rem;
+  left: -5rem;
+  z-index: -1;
+}
+
+.contact-redcircle {
+  position: absolute;
+  top: -15rem;
+  right: 0;
+  z-index: -1;
+}
+
+.contactform-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-height: 36.875em;
+  gap: 2rem;
+  padding: 9.84375rem 0;
+}
+
+.contact-content{
+    max-width: 47rem;
+}
+
+/* Tabs and small laptop Screen */
+@media (767px < width < 1199px) {
+
+  .contact-container{
+    padding-top: 16rem;
+  }
+}

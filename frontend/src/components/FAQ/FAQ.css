@@ -1,0 +1,32 @@
+.faq-accordionsection{
+    max-width: 50rem;
+    width: 50rem;
+    height: auto;
+}
+
+/* mobile screen */
+/* Responsive */
+@media (width < 580px) {
+    .faq-accordionsection{
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (581px < width < 766px) {
+    .faq-accordionsection{
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* Tabs and small laptop Screen */
+@media (767px < width < 1199px) {
+    .faq-accordionsection{
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+    }
+}

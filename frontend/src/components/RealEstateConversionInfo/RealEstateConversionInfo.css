@@ -1,0 +1,124 @@
+.conversion-container {
+  position: relative;
+  width: 100%;
+  height: inherit;
+  margin-bottom: 4rem;
+  padding-top: 12.5rem;
+}
+
+.conversion-section {
+  width: 100%;
+  /* margin-top: 24.4375rem; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4rem;
+}
+
+.conversion-section__card {
+  display: flex;
+  flex-direction: row;
+  gap: 6.125rem;
+}
+
+.conversion-section__card-image {
+  width: 31.25rem;
+  height: 25rem;
+  padding: 0;
+  margin: 0;
+}
+
+.conversion-section__card-detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.conversion-section__card-detail > h3 {
+  font-size: 2rem;
+  line-height: 3rem;
+  color: var(--primaryDark);
+  margin: 0;
+}
+
+.conversion-section__card-detail > p {
+  font-size: 1.5rem;
+  line-height: 2.25rem;
+  color: var(--secondaryDark);
+}
+
+/* mobile screen */
+/* Responsive */
+@media (width < 580px) {
+  .conversion-section__card {
+    flex-direction: column;
+    gap: 2.5rem;
+    text-align: center;
+  }
+
+  .conversion-section__card {
+    padding: 0;
+  }
+
+  .conversion-section__card > img {
+    width: 100%;
+    height: auto;
+    padding: 0 0.5em;
+  }
+
+  .conversion-section__card-detail > h3 {
+    font-size: 1.25rem;
+    line-height: 2rem;
+  }
+
+  .conversion-section__card-detail > p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
+
+@media (581px < width < 766px) {
+  .conversion-section__card {
+    flex-direction: column;
+    gap: 2.5rem;
+    text-align: center;
+  }
+
+  .conversion-section__card {
+    padding: 0;
+  }
+
+  .conversion-section__card > img {
+    width: 100%;
+    height: auto;
+    padding: 0 0.5em;
+  }
+
+  .conversion-section__card-detail > h3 {
+    font-size: 1.25rem;
+    line-height: 2rem;
+  }
+
+  .conversion-section__card-detail > p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
+
+/* Tabs and small laptop Screen */
+@media (767px < width < 1199px) {
+  .conversion-section__card {
+    flex-direction: column;
+    gap: 3.5rem;
+  }
+
+  .conversion-section__card {
+    padding: 0;
+  }
+
+  .conversion-section__card > img {
+    width: 100%;
+    height: auto;
+    padding: 0 1.25em;
+  }
+}

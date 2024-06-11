@@ -1,0 +1,11 @@
+.expertise-toppadding {
+  margin-top: 10rem !important;
+}
+
+.expertiselists {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2.1875em;
+  margin-top: 4rem;
+}

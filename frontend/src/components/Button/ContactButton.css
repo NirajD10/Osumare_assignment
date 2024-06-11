@@ -1,0 +1,30 @@
+.contact-btn {
+  width: 13.5rem;
+  padding: 0.625em 1.5em 0.625em 1.5em;
+  border: 1px solid var(--primaryDark);
+  border-radius: 2em;
+  line-height: 1.5rem;
+  text-align: center;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  transition: color 0.25s;
+  background-color: white;
+  cursor: pointer;
+}
+
+.contact-btn:hover {
+  border-color: var(--primaryColor);
+  color: var(--primaryColor);
+}
+
+.contact-btn:focus,
+.contact-btn:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media only screen and (max-width: 768px) {
+  .contact-btn {
+    width: 6.75rem;
+    padding: 0.312em 0.75em 0.315em 0.75em;
+  }
+}
