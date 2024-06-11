@@ -7,7 +7,7 @@ import housesearchingimage from "../../assets/Images/house_searching.png";
 function RealEstateConversionInfo() {
   return (
     <div className="conversion-container">
-      <section className="container-padding conversion-section" role="article" tabIndex={6}>
+      <section className="container-padding conversion-section" role="article" tabIndex={0}>
         <HeadingTitle
           title="Streamlined Strategies for Real Estate Success"
           subtitle="Streamlined Strategies for Real Estate Success"

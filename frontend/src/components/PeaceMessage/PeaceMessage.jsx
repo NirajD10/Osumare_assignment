@@ -7,7 +7,7 @@ import redcirclegradient from "../../assets/Images/Ellipse_red.png"
 
 function PeaceMessage() {
   return (
-    <section className="message-container" role="messages" tabIndex={9}>
+    <section className="message-container" role="article" tabIndex={0}>
        <img src={bluecirclegradient} alt="Blue Gradient Circle" className="message-bluecircle"/>
        <img src={redcirclegradient} alt="Red Gradient Circle" className="message-redcircle" />
        <div className="meassge-section">

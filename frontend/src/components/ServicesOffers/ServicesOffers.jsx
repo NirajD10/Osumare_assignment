@@ -7,7 +7,7 @@ import HeadingTitle from "../HeadingTitle/HeadingTitle";
 
 function ServicesOffers() {
   return (
-    <section className="services-container" role="article" tabIndex={4}>
+    <section className="services-container" role="article" tabIndex={0}>
       <div className="services-section container-padding">
         <HeadingTitle
           title="Our Service Offerings"

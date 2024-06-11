@@ -7,7 +7,7 @@ import ContactForm from "./ContactForm";
 
 function Contact() {
   return (
-    <section className="contact-container" role="contacts" tabIndex={12}>
+    <section className="contact-container" role="article" tabIndex={0}>
       <div className=" contact-section">
         <img
           src={bluecirclegradient}

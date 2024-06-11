@@ -7,7 +7,7 @@ import HeadingTitle from "../HeadingTitle/HeadingTitle";
 
 function RealEstateDigitalMastery() {
   return (
-    <section className="mastery-container" role="article" tabIndex={3}>
+    <section className="mastery-container" role="article" tabIndex={0}>
       <div className="hero-section__image">
         <img
           src={housemarketingimage}

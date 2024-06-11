@@ -6,7 +6,7 @@ import { propertyinquireslist } from '../../constant/data'
 
 function PropertyInquiriesLists() {
   return (
-    <section className='container-padding' role='article' tabIndex={7}>
+    <section className='container-padding' role='article' tabIndex={0}>
         <HeadingTitle title="Driving Property Inquiries to Conversions" />
         <div className='propertylists'>
             {propertyinquireslist.map(item => (

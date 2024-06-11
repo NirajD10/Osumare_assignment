@@ -5,7 +5,7 @@ import bluecircleGradient from "../../assets/Images/Ellipse_Banner_Blue.png";
 
 function Hero() {
   return (
-    <section className="hero" role="banner" tabIndex={2}>
+    <section className="hero" role="banner" tabIndex={0}>
       <div className="hero-opacity"></div>
       <img
         src={bluecircleGradient}

@@ -6,7 +6,7 @@ import BigListItem from '../BigListItem/BigListItem'
 
 function ExpertiseLists() {
   return (
-    <section className='container-padding expertise-toppadding' role='article' tabIndex={8}>
+    <section className='container-padding expertise-toppadding' role='article' tabIndex={0}>
     <HeadingTitle title="Our Expertise in Action" />
     <div className='expertiselists'>
         {expertiselists.map(item => (
