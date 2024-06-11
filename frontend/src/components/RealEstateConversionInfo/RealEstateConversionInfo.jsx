@@ -7,7 +7,7 @@ import housesearchingimage from "../../assets/Images/house_searching.png";
 function RealEstateConversionInfo() {
   return (
     <div className="conversion-container">
-      <div className="container-padding conversion-section">
+      <section className="container-padding conversion-section" role="article" tabIndex={6}>
         <HeadingTitle
           title="Streamlined Strategies for Real Estate Success"
           subtitle="Streamlined Strategies for Real Estate Success"
@@ -38,7 +38,7 @@ function RealEstateConversionInfo() {
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </div>
   );
 }

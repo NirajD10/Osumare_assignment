@@ -6,7 +6,7 @@ import BigListItem from '../BigListItem/BigListItem'
 
 function ExpertiseLists() {
   return (
-    <div className='container-padding expertise-toppadding'>
+    <section className='container-padding expertise-toppadding' role='article' tabIndex={8}>
     <HeadingTitle title="Our Expertise in Action" />
     <div className='expertiselists'>
         {expertiselists.map(item => (
@@ -15,7 +15,7 @@ function ExpertiseLists() {
             </React.Fragment>
         ))}
     </div>
-</div>
+</section>
   )
 }
 

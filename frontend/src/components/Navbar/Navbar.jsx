@@ -5,7 +5,7 @@ import './Navbar.css'
 
 function Navbar() {
   return (
-    <header className='container-padding header'>
+    <header className='container-padding header' role='navigation' tabIndex={1}>
         <img src={osumare_logo} alt='Company Logo' className='company-logo'/>
         <ContactButton />
     </header>

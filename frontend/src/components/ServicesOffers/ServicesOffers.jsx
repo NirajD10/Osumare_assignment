@@ -7,7 +7,7 @@ import HeadingTitle from "../HeadingTitle/HeadingTitle";
 
 function ServicesOffers() {
   return (
-    <div className="services-container">
+    <section className="services-container" role="article" tabIndex={4}>
       <div className="services-section container-padding">
         <HeadingTitle
           title="Our Service Offerings"
@@ -31,7 +31,7 @@ function ServicesOffers() {
           />
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

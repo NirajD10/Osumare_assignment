@@ -8,7 +8,7 @@ import { advantages } from "../../constant/data";
 function RealEstateAdvantage() {
   return (
     <div className="container-padding">
-      <div className="advantage-container">
+      <section className="advantage-container" role="article" tabIndex={5}>
         <HeadingTitle
           title="Navigating Real Estate's Digital Landscape"
           subtitle="Insights for Real Estate Marketing Advantage"
@@ -33,7 +33,7 @@ function RealEstateAdvantage() {
             />
           </div>
         </div>
-      </div>
+      </section>
     </div>
   );
 }

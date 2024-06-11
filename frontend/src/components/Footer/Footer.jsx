@@ -9,7 +9,7 @@ function Footer() {
   return (
     <div className="footer-container">
       <div className="footer-section container-padding">
-        <footer>
+        <footer role="contentinfo" id="footer" tabIndex={13}>
           <div className="footer_wrapper">
             <div className="footer_wrapper-about">
               <img

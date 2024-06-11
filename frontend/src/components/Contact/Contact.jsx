@@ -7,7 +7,7 @@ import ContactForm from "./ContactForm";
 
 function Contact() {
   return (
-    <div className="contact-container">
+    <section className="contact-container" role="contacts" tabIndex={12}>
       <div className=" contact-section">
         <img
           src={bluecirclegradient}
@@ -29,7 +29,7 @@ function Contact() {
           <ContactForm />
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

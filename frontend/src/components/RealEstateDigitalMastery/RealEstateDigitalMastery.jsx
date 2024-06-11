@@ -7,7 +7,7 @@ import HeadingTitle from "../HeadingTitle/HeadingTitle";
 
 function RealEstateDigitalMastery() {
   return (
-    <div className="mastery-container">
+    <section className="mastery-container" role="article" tabIndex={3}>
       <div className="hero-section__image">
         <img
           src={housemarketingimage}
@@ -47,7 +47,7 @@ function RealEstateDigitalMastery() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

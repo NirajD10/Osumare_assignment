@@ -15,7 +15,7 @@ function Testimonial() {
           subtitle="Driving Transformations, One Brand at a Time"
         />
         <div className="testimonionalFaq-section">
-          <div className="testimonional-section">
+          <section className="testimonional-section" role="testimional" tabIndex={10}>
             <TestimonialCard />
             <div className="testimonional-controls">
               <button className="left-arrow-control">
@@ -25,9 +25,9 @@ function Testimonial() {
                 <img src={rightarrowvector} alt="Right Arrow Vector" />
               </button>
             </div>
-          </div>
+          </section>
           {/* FAQ Section */}
-          <div className="faq-section">
+          <section className="faq-section" role="faq" tabIndex={11}>
             <HeadingTitle
               title="Frequently Asked Questions"
               subtitle="Pinpoint your audience with precision, ensuring your marketing efforts reach those most likely to engage with your brand."
@@ -35,7 +35,7 @@ function Testimonial() {
             <div className="faq-accordion">
               <FAQ />
             </div>
-          </div>
+          </section>
         </div>
       </div>
     </div>
